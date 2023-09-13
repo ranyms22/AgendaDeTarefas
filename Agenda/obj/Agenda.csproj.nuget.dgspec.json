@@ -4,14 +4,14 @@
     "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda\\Agenda.csproj": {}
   },
   "projects": {
-    "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda\\Agenda.csproj": {
+    "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda.data\\Agenda.data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda\\Agenda.csproj",
-        "projectName": "Agenda",
-        "projectPath": "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda\\Agenda.csproj",
+        "projectUniqueName": "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda.data\\Agenda.data.csproj",
+        "projectName": "Agenda.data",
+        "projectPath": "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda.data\\Agenda.data.csproj",
         "packagesPath": "C:\\Users\\rany_\\.nuget\\packages\\",
-        "outputPath": "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda\\obj\\",
+        "outputPath": "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda.data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rany_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,79 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "dapper": {
+              "target": "Package",
+              "version": "[2.0.151, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda\\Agenda.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda\\Agenda.csproj",
+        "projectName": "Agenda",
+        "projectPath": "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda\\Agenda.csproj",
+        "packagesPath": "C:\\Users\\rany_\\.nuget\\packages\\",
+        "outputPath": "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rany_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda.data\\Agenda.data.csproj": {
+                "projectPath": "D:\\Meus Codigos\\AgendaDeTarefas\\Agenda.data\\Agenda.data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[5.0.17, )"
@@ -47,6 +120,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.4, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.4, )"
             }
           },
           "imports": [

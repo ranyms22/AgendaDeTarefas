@@ -1,0 +1,68 @@
+﻿@model Agenda.data.Models.Domain.Tarefas;
+
+<h3>Editar Tarefa</h3>
+
+<a asp-action="Listar" asp-controller="Agenda" class="btn btn-primary">Lista de Tarefas</a>
+
+<form asp-action="EditarTarefa" asp-controller="Agenda" method="post">
+    <input asp-for="Id" type="hidden" class="form-control">
+
+    <div class="mb-3">
+        <label asp-for="Titulo" class="form-label">Título</label>
+        <input asp-for="Titulo" type="text" class="form-control">
+        <span class="text-danger" asp-validation-for="Titulo"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Descricao" class="form-label">Descrição</label>
+        <textarea asp-for="Descricao" class="form-control"></textarea>
+        <span class="text-danger" asp-validation-for="Descricao"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Data" class="form-label">Data</label>
+        <input asp-for="Data" type="date" class="form-control">
+        <span class="text-danger" asp-validation-for="Data"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Prioridade" class="form-label">Prioridade</label>
+        <select asp-for="Prioridade" class="form-control">
+            <option value="1">Alta</option>
+            <option value="2">Média</option>
+            <option value="3">Baixa</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Finalizada" class="form-label">Finalizada</label>
+        <select asp-for="Finalizada" class="form-control">
+            <option value="@true">Sim</option>
+            <option value="@false">Não</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="hora_inicio" class="form-label">Hora de início</label>
+        <input asp-for="hora_inicio" type="time" class="form-control">
+        <span class="text-danger" asp-validation-for="hora_inicio"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="hora_fim" class="form-label">Hora de Término</label>
+        <input asp-for="hora_fim" type="time" class="form-control">
+        <span class="text-danger" asp-validation-for="hora_fim"></span>
+    </div>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="bg-warning mb-3">
+            @TempData["msg"]
+        </div>
+    }
+
+    <div class="mb-3">
+        <button type="submit" class="btn btn-success">Salvar</button>
+    </div>
+
+</form>

@@ -86,7 +86,6 @@ D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.AspNetCor
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.CSharp.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Caching.Abstractions.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Caching.Memory.dll
-D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.Binder.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.CommandLine.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.dll
@@ -113,7 +112,6 @@ D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extension
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Identity.Stores.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Localization.dll
-D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.Configuration.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.Console.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.Debug.dll
@@ -125,7 +123,6 @@ D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extension
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.DataAnnotations.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.dll
-D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.Primitives.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Extensions.WebEncoders.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.JSInterop.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\Microsoft.Net.Http.Headers.dll
@@ -225,7 +222,6 @@ D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\System.Reflection.T
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\System.Resources.Reader.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\System.Resources.ResourceManager.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\System.Resources.Writer.dll
-D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\System.Runtime.CompilerServices.Unsafe.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\System.Runtime.CompilerServices.VisualC.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\System.Runtime.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\System.Runtime.Extensions.dll
@@ -291,13 +287,19 @@ D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\System.Xml.XPath.XD
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\refs\WindowsBase.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Agenda.Views.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Agenda.Views.pdb
+D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Dapper.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Npgsql.dll
+D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -324,6 +326,8 @@ D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\ru\Microsoft.CodeAnalysi
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Agenda.data.dll
+D:\Meus Codigos\AgendaDeTarefas\Agenda\bin\Debug\net5.0\Agenda.data.pdb
 D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Agenda.csproj.AssemblyReference.cache
 D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Agenda.GeneratedMSBuildEditorConfig.editorconfig
 D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Agenda.AssemblyInfoInputs.cache
@@ -343,9 +347,10 @@ D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\staticwebassets\msbuild.
 D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Agenda.TagHelpers.input.cache
 D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Agenda.TagHelpers.output.cache
 D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Agenda.RazorCoreGenerate.cache
-D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Razor\Views\Agenda\Criar.cshtml.g.cs
+D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Razor\Views\Agenda\Editar.cshtml.g.cs
+D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Razor\Views\Agenda\Estatistica.cshtml.g.cs
+D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Razor\Views\Agenda\Listar.cshtml.g.cs
 D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 D:\Meus Codigos\AgendaDeTarefas\Agenda\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs

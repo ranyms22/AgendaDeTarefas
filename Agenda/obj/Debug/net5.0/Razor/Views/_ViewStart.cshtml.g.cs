@@ -19,15 +19,8 @@ using Agenda;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "D:\Meus Codigos\AgendaDeTarefas\Agenda\Views\_ViewImports.cshtml"
-using Agenda.Models;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"47e02b4da20d198892b7b1b00b12944068797c438ef2e82d20ff70b4d56bad39", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"9bf6f5d4e5c6fe1bf805abd17450c802224f0ff054dea761de5c296ce37d400a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"e6db8d6a85cbd05716feda389b9123c74eceaca037efe496f99fb9fb36412f17", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

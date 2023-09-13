@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Agenda",
+    "\\Agenda.data",
+    "\\Agenda.data\\DataAcess"
   ],
   "PreviewInSolutionExplorer": false
 }

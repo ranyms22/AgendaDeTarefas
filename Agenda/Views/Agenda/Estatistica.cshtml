@@ -1,0 +1,85 @@
+﻿@using Agenda.data.Models.Domain;
+
+@model IEnumerable<Tarefas>
+
+@{
+
+    DateTime? dataInicioFiltro = null;
+    DateTime? dataFimFiltro = null;
+
+    if (Context.Request.Query.ContainsKey("dataInicio") && Context.Request.Query.ContainsKey("dataFim"))
+    {
+        dataInicioFiltro = DateTime.TryParse(Context.Request.Query["dataInicio"], out var dataInicio) ? dataInicio : (DateTime?)null;
+        dataFimFiltro = DateTime.TryParse(Context.Request.Query["dataFim"], out var dataFim) ? dataFim : (DateTime?)null;
+
+        if (dataInicioFiltro == null || dataFimFiltro == null)
+        {
+            <div class="alert alert-danger">Por favor, insira datas válidas para o filtro.</div>
+            dataInicioFiltro = null;
+            dataFimFiltro = null;
+        }
+    }
+
+    var tarefasFiltradas = Model.Where(t =>
+        (!dataInicioFiltro.HasValue || t.Data.Date >= dataInicioFiltro.Value.Date) &&
+        (!dataFimFiltro.HasValue || t.Data.Date <= dataFimFiltro.Value.Date));
+
+    var tarefasAgrupadasPorData = tarefasFiltradas.GroupBy(t => t.Data.Date);
+}
+
+<div class="container mt-5">
+    <div class="p-3">
+        <h1>Minhas Estatísticas</h1>
+        @if (Model != null)
+        {
+            <h2>Você possui @Model.Count() tarefas cadastradas</h2>
+            <h3>Você concluiu @Model.Count(t => t.Finalizada) tarefas</h3>
+        }
+
+        <a asp-action="Listar" asp-controller="Agenda" class="btn btn-primary">Lista de Tarefas</a>
+    </div>
+
+    <form method="get">
+        <div class="form-group">
+            <label for="dataInicio">Data de Início:</label>
+            <input type="date" id="dataInicio" name="dataInicio" value="@dataInicioFiltro?.ToString("yyyy-MM-dd")" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="dataFim">Data de Fim:</label>
+            <input type="date" id="dataFim" name="dataFim" value="@dataFimFiltro?.ToString("yyyy-MM-dd")" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Filtrar</button>
+    </form>
+
+    <table class="table table-stripped mt-3">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Total de Tarefas</th>
+                <th>Total de Horas</th>
+                <th>Média de Horas</th>
+                <th>Percentual Concluído</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var grupo in tarefasAgrupadasPorData)
+            {
+                var data = grupo.Key;
+                var totalTarefas = grupo.Count();
+                var totalTarefasConcluidas = grupo.Count(tarefa => tarefa.Finalizada);
+                var totalHoras = grupo.Sum(tarefa => (tarefa.hora_fim - tarefa.hora_inicio).TotalHours);
+                var mediaHoras = totalTarefas > 0 ? totalHoras / totalTarefas : 0;
+                var percentualConcluido = totalTarefas > 0 ? (double)totalTarefasConcluidas / totalTarefas * 100 : 0;
+
+                <tr>
+                    <td>@data.ToShortDateString()</td>
+                    <td>@totalTarefas</td>
+                    <td>@totalHoras</td>
+                    <td>@mediaHoras</td>
+                    <td>@percentualConcluido%</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

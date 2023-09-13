@@ -1,0 +1,12 @@
+D:\Meus Codigos\AgendaDeTarefas\Agenda.data\bin\Debug\net5.0\Agenda.data.deps.json
+D:\Meus Codigos\AgendaDeTarefas\Agenda.data\bin\Debug\net5.0\Agenda.data.dll
+D:\Meus Codigos\AgendaDeTarefas\Agenda.data\bin\Debug\net5.0\Agenda.data.pdb
+D:\Meus Codigos\AgendaDeTarefas\Agenda.data\obj\Debug\net5.0\Agenda.data.csproj.AssemblyReference.cache
+D:\Meus Codigos\AgendaDeTarefas\Agenda.data\obj\Debug\net5.0\Agenda.data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Meus Codigos\AgendaDeTarefas\Agenda.data\obj\Debug\net5.0\Agenda.data.AssemblyInfoInputs.cache
+D:\Meus Codigos\AgendaDeTarefas\Agenda.data\obj\Debug\net5.0\Agenda.data.AssemblyInfo.cs
+D:\Meus Codigos\AgendaDeTarefas\Agenda.data\obj\Debug\net5.0\Agenda.data.csproj.CoreCompileInputs.cache
+D:\Meus Codigos\AgendaDeTarefas\Agenda.data\obj\Debug\net5.0\Agenda.data.dll
+D:\Meus Codigos\AgendaDeTarefas\Agenda.data\obj\Debug\net5.0\refint\Agenda.data.dll
+D:\Meus Codigos\AgendaDeTarefas\Agenda.data\obj\Debug\net5.0\Agenda.data.pdb
+D:\Meus Codigos\AgendaDeTarefas\Agenda.data\obj\Debug\net5.0\ref\Agenda.data.dll

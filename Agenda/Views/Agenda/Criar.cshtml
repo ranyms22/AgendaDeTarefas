@@ -1,0 +1,58 @@
+﻿@model Agenda.data.Models.Domain.Tarefas;
+
+<h3>Criar Tarefa</h3>
+
+<a asp-action="Listar" asp-controller="Agenda" class="btn btn-primary">Lista de Tarefas</a>
+
+<form action="/Agenda/SalvarTarefa" method="post">
+    <div class="mb-3">
+        <label asp-for="Titulo" class="form-label">Título</label>
+        <input required asp-for="Titulo" type="text" class="form-control">
+
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Descricao" class="form-label">Descrição</label>
+        <textarea required asp-for="Descricao" class="form-control"></textarea>
+
+    </div>
+
+    <div class="mb-3">
+        <label  asp-for="Data" class="form-label">Data</label>
+        <input required asp-for="Data" type="date" class="form-control">
+
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Prioridade" class="form-label">Prioridade</label>
+        <select asp-for="Prioridade" class="form-control">
+            <option value="Alta">Alta</option>
+            <option value="Média">Média</option>
+            <option value="Baixa">Baixa</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label  asp-for="hora_inicio" class="form-label">Hora de início</label>
+        <input required asp-for="hora_inicio" type="time" class="form-control">
+
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="hora_fim" class="form-label">Hora de Término</label>
+        <input required asp-for="hora_fim" type="time" class="form-control">
+
+    </div>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="bg-warning mb-3">
+            @TempData["msg"]
+        </div>
+    }
+
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Adicionar Tarefa</button>
+    </div>
+    
+</form>
