@@ -34,7 +34,9 @@
       "Agenda/1.0.0": {
         "dependencies": {
           "Agenda.data": "1.0.0",
+          "Dapper": "2.0.151",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.17",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.4",
           "Npgsql": "7.0.4",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -606,7 +608,9 @@
       "System.Threading.Tasks.Extensions/4.5.4": {},
       "Agenda.data/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.17",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.4",
           "Npgsql": "7.0.4",
           "Dapper": "2.0.151"
         },

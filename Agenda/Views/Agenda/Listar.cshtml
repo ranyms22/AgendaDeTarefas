@@ -1,48 +1,57 @@
 ﻿@using Agenda.data.Models.Domain;
-
 @model IEnumerable<Tarefas>
 
 <div class="container mt-5">
     <h1>Minha Agenda</h1>
     <div class="p-3">
-            @if (Model != null){
-            }
-        <a  class="btn btn-primary" asp-action="criar" asp-controller="Agenda">Nova Tarefa</a>
-        
-        <a  class="btn btn-primary" asp-action="estatistica" asp-controller="Agenda">Minhas Estatisticas </a>
+        @if (Model != null && Model.Any()) 
+        {
+            <a class="btn btn-primary" asp-action="criar" asp-controller="Agenda">Nova Tarefa</a>
+            <a class="btn btn-primary" asp-action="estatistica" asp-controller="Agenda">Minhas Estatísticas</a>
+        }
     </div>
-    <table class="table table-stripped">
-        <thead>
-            <tr>
-                <th>Título da tarefa</th>
-                <th>Descrição da tarefa</th>
-                <th>Data</th>
-                <th>Hora inicio</th>
-                <th>Hora fim</th>
-                <th>Prioridade</th>
-                <th>Tarefa finalizada?</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var tarefas in Model)
-            {
-                <tr>
-                    <td>@tarefas.Titulo</td>
-                    <td>@tarefas.Descricao</td>
-                    <td>@tarefas.Data.ToShortDateString()</td>
-                    <td>@tarefas.hora_inicio.ToShortTimeString()</td>
-                    <td>@tarefas.hora_fim.ToShortTimeString()</td>
-                    <td>@tarefas.Prioridade</td>
-                    <td>@tarefas.FinalizadaComoTexto</td>
-            
-                    <td>
-                        <a  asp-action="Editar" asp-controller="Agenda" asp-route-id="@tarefas.Id"><span><i class="fa fa-pencil"></i></span></a>
-                        <a asp-action="Excluir" asp-controller="Agenda" asp-route-id="@tarefas.Id" onclick="return window.confirm(Você tem certeza que deseja deletar esta tarefa?)"><span><i class="fa-solid fa-trash-can"></i></span></a>
-                    </td>
-                </tr>
-            }
-        </tbody>
 
-    </table>
+    @if (Model != null && Model.Any()) 
+    {
+        <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <th>Título da tarefa</th>
+                    <th>Descrição da tarefa</th>
+                    <th>Data</th>
+                    <th>Hora início</th>
+                    <th>Hora fim</th>
+                    <th>Prioridade</th>
+                    <th>Tarefa finalizada?</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var tarefas in Model)
+                {
+                    <tr>
+                        <td>@tarefas.Titulo</td>
+                        <td>@tarefas.Descricao</td>
+                        <td>@tarefas.Data.ToShortDateString()</td>
+                        <td>@tarefas.hora_inicio.ToShortTimeString()</td>
+                        <td>@tarefas.hora_fim.ToShortTimeString()</td>
+                        <td>@tarefas.Prioridade</td>
+                        <td>@tarefas.FinalizadaComoTexto</td>
+
+                        <td>
+                            <a asp-action="Editar" asp-controller="Agenda" asp-route-id="@tarefas.Id"><span><i class="fa fa-pencil"></i></span></a>
+                            <a asp-action="Excluir" asp-controller="Agenda" asp-route-id="@tarefas.Id" onclick="return window.confirm('Você tem certeza que deseja deletar esta tarefa?')"><span><i class="fa-solid fa-trash-can"></i></span></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+
+        <a class="btn btn-primary" asp-action="criar" asp-controller="Agenda">Nova Tarefa</a>
+        <a class="btn btn-primary" asp-action="estatistica" asp-controller="Agenda">Minhas Estatísticas</a>
+        <p>Nenhuma tarefa encontrada.</p>
+    }
 </div>

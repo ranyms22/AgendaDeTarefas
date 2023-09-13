@@ -3,7 +3,7 @@
     image: "postgres:15.3"
     container_name: tarefas
     environment:
-      POSTGRES_DB: agenda
+      POSTGRES_DB: Agenda
       POSTGRES_USER: agendauser
       POSTGRES_PASSWORD: 1234 
     ports:
