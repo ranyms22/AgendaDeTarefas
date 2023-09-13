@@ -26,4 +26,4 @@ CREATE TABLE tarefas (
 );
 
 passo 4: executar o programa
-após rodar a query acima e ter funcionado tudo correto é so rodar o programa!
+após rodar a query acima e ter funcionado tudo correto é só executar  o projeto e voalá!
