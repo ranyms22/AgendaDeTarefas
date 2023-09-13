@@ -13,7 +13,7 @@ Escrever o comando
 no seu prompt de comando para poder subir o container
 
 passo3:
-após ter criado o banco de dados(postgres),copiar  por favor rodar a query abaixo no banco 
+após ter criado o banco de dados(postgres), por favor rodar a query abaixo no banco 
 CREATE TABLE tarefas (
     titulo      varchar(100) NOT NULL,
     descricao   text,
